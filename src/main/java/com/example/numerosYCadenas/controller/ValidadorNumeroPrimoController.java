@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping( "/names_1a100" )
+@RequestMapping( "/primos_1a100" )
 
 public class ValidadorNumeroPrimoController {
 
