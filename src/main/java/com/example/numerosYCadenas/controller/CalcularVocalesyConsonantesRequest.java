@@ -3,8 +3,6 @@ package com.example.numerosYCadenas.controller;
 import lombok.Data;
 
 @Data
-public class ConversorCadenaRequest {
+public class CalcularVocalesyConsonantesRequest {
     private String cadena;
-    private int valorHasta;
-
 }

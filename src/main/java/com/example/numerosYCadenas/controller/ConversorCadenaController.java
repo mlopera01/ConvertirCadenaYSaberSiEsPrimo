@@ -6,11 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping( "/cadenas" )
+@RequestMapping( "/convertir-cadena" )
 
 public class ConversorCadenaController {
     private final ConversorCadenaService cadenaCaracterService;
-
 
 
     public ConversorCadenaController(@Autowired ConversorCadenaService cadenaCaracterService) {
@@ -20,7 +19,6 @@ public class ConversorCadenaController {
     @PostMapping //create
     @ResponseBody
     public ResponseEntity<ConversorCadenaResponse> calcularCadena(@RequestBody ConversorCadenaRequest cadena) {
-        return ResponseEntity.ok(cadenaCaracterService.realizarCalculo(cadena));
+        return ResponseEntity.ok(cadenaCaracterService.ConvertirCadena(cadena));
     }
-
 }
